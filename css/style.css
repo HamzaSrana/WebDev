@@ -1,0 +1,533 @@
+body{
+    background-color: rgb(230, 230, 176);
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    display: flex;
+    background-color: rgb(245, 221, 7);
+}
+.nav-list{
+    position: sticky;
+    display: flex;
+    align-items: center;
+   
+}
+.nav-list  li{
+      
+       left: 70%;
+       list-style: none;
+       padding: 20px;
+       text-transform: uppercase;
+       font-family: 'Bree Serif', serif;
+}
+.nav-list li a {
+  width: 100px;
+    justify-content: center;
+    font-size: 20px;
+    text-decoration: none;
+    color: black
+}
+.nav-list li a:hover {
+    text-decoration: none;
+    color: gray;
+}
+.btn{
+    width: 100%;
+    height: 18%;
+    background-color: darkred;
+    border: 2px solid black;
+    font-family: 'bree serif', sans-serif;
+    font-size: 28px;
+    color: white;
+}
+/* home*/ 
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 598px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url('../imgs/group.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 97%;
+    width: 100%;
+    z-index: -1;
+}
+#home .block {
+    width: 25%;
+    height: 640px;
+    margin-top: 0;
+    margin-right: 1100px;
+    background-color: black;
+}
+#home .block h1 {
+ 
+    font-family: 'Bree Serif', serif;
+    margin-left: 25px 10px 10px;
+    color: gold;
+    padding: 30px;
+}
+#home .block p{
+   
+   margin-left: 25px 10px 10px;
+    font-family: 'Bree Serif', serif;
+    color: bisque;
+    padding: 20px;
+    
+}
+.block .btn{
+    margin-left: 13px;
+    font-family: 'Bree Serif', serif;
+    width: 90%;
+    height: 8%;
+    background-color: orange;
+    border: 1px solid brown;
+    color:black;
+    font-size: 18px;  
+}
+.block .champ{
+    width: 75%;
+    height: 8%;
+    margin-left: 30px ;
+    margin-top: 20px;
+}
+/*utility classes */ 
+.h-primary {
+    text-shadow: 2px 3px 7px gray;
+    font-family: 'bree', sans-serif;
+    text-align: center;
+    font-size: 2.1rem;
+    padding: 12px;
+}
+.h-secondary {
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+    font-size: 28px;
+    padding: 8px;
+}
+
+.h-primarymid{
+  text-shadow: 2px 3px 7px yellow;
+  font-family: 'Alfa Slab One', cursive;
+  text-transform: uppercase;
+  color: darkred;
+  text-align: center;
+  font-size: 2.8rem;
+  padding: 50px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+ 
+   
+
+
+
+
+
+
+
+
+
+
+/* carousel*/
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: black ;
+  margin-bottom: 40px;
+}
+
+.carousel-cell1 {
+  width: 80%;
+  height: 500px;
+  margin-right: 10px;
+  background: url('../imgs/dogi.jpg') no-repeat  center/cover ;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+.carousel-cell2 {
+    width: 80%;
+    height: 500px;
+    margin-right: 10px;
+    background: url('../imgs/6.jpg') no-repeat center/cover ;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+  }
+  .carousel-cell3 {
+    width: 80%;
+    height: 500px;
+    margin-right: 10px;
+    background: url('../imgs/2299911.jpg') no-repeat center/cover ;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+  }
+  .carousel-cell4 {
+    width: 80%;
+    height: 500px;
+    margin-right: 10px;
+    background: url('../imgs/negro.jpg') no-repeat center/cover ;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+  }
+  .carousel-cell5 {
+    width: 80%;
+    height: 500px;
+    margin-right: 10px;
+    background: url('../imgs/92bd91d8050a14be7c8640c7ccc414bf.jpg') no-repeat center/cover ;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+  }
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+.carousel-nav .carousel-cell1 {
+  height: 100px;
+  width: 100px;
+}
+.carousel-nav .carousel-cell2 {
+    height: 100px;
+    width: 100px;
+  }
+  .carousel-nav .carousel-cell3 {
+    height: 100px;
+    width: 100px;
+  }
+  .carousel-nav .carousel-cell4{
+    height: 100px;
+    width: 100px;
+  }
+  .carousel-nav .carousel-cell5 {
+    height: 100px;
+    width: 100px;
+  }
+
+.carousel-nav .carousel-cell:before {
+  font-size: 50px;
+  line-height: 80px;
+}
+
+.carousel-nav .carousel-cell.is-nav-selected {
+  background: darkred;
+}
+
+/* prayer*/
+.container{
+    background: url('../imgs/bg.jpg') no-repeat center center/cover;
+    height: 500px;
+    box-shadow: 5px 6px 8px  gray;
+}
+.h-secondaryp{
+  font-family: 'Bree Serif', serif;
+  font-size: 38px;
+  padding: 12px;
+  margin-left: 20%;
+}
+.btn4{
+  font-family: 'Bree Serif', serif;
+  width: 250px;
+  height: 58px;
+  margin: 2px;
+  margin-left: 80px;
+  background-color: rgb(5, 16, 109);
+  color: white;
+  text-decoration: none;
+  vertical-align: middle;
+}
+.btn4 a{
+  width: 100px;
+  justify-content: center;
+  font-size: 24px;
+  text-decoration: none;
+  color: white;
+}
+
+/* champion*/
+.champion .h-secondaryp{
+  font-family: 'Bree Serif', serif;
+  font-size: 38px;
+  padding: 12px;
+  margin-left: 10%;
+}
+.btn5{
+  font-family: 'Bree Serif', serif;
+  font-size: 24px;
+  width: 300px;
+  height: 58px;
+  margin: 2px;
+  margin-left: 479px;
+  background-color: rgb(5, 16, 109);
+  color: white;
+  text-decoration: none;
+  vertical-align: middle;
+}
+/* end*/
+footer{ 
+  width: 100%;
+  height: 400px;
+  font-family: 'Bree Serif', serif;
+  padding: 20px;
+  margin-top: 20px;
+  color: #ffffff;
+  background-color: darkred;
+  text-align: center;
+}
+.icons {
+  margin-top: 18px;
+  color: goldenrod;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* work */
+#detail {
+  
+  display: flex;
+}
+#detail .box {
+   padding: 34px;
+   margin: 3px 4px;
+   border-radius: 20px;
+   background-color: rgb(233, 233, 160);
+   box-shadow: 8px 10px 28px gray;
+}
+#detail .box img{
+   height: 160px;
+   display: block;
+   margin: auto;
+   background-color: thistle;
+}
+#detail .h-primarymid{
+  text-shadow: 2px 3px 7px yellow;
+  font-family: 'Alfa Slab One', cursive;
+  text-transform: uppercase;
+  color: darkred;
+  text-align: center;
+  font-size: 2.8rem;
+  padding: 50px;
+
+}
+#detail .h-secondary{
+  font-family: 'Bree Serif', serif;
+  text-align: left;
+  font-size: 28px;
+  padding: 4px;
+
+}
+#detail .box p{
+   font-family: 'Bree Serif', serif;
+}
+
+/* impact*/
+.secRight {
+  background-color: rgb(233, 233, 160);
+   width: 1000px;
+    height: 690px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+}
+.secRight .sectionSubTag {
+    font-family: 'Bree Serif', serif;
+    justify-content: center;
+    padding: 8px;
+}
+.thumbnail .imgFluid{
+    width: 600px;
+    height: 400px;
+    border-radius: 9%;
+    box-shadow: 12px 16px 8px gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* amount section*/
+.btn2{
+  font-family: 'Bree Serif', serif;
+  font-size: 24px;
+  width: 125px;
+  height: 50px;
+  margin: 3px;
+  margin-left: 80px;
+  background-color: rgb(5, 16, 109);
+  color: white;
+  text-decoration: none;
+  vertical-align: middle; 
+}
+.btn2:hover{
+  background-color: skyblue;
+  color: black;
+}
+.h-secondaryamount {
+      font-family: 'Bree Serif', serif;
+      font-size: 50px;
+      padding: 12px;
+     
+  }
+.amount {
+  width: 190px;
+  height: 47px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  background-color: wheat;
+}
+.btn3{
+  margin: 5px;
+  margin-top: 40px;
+  margin-left: 10px;
+  width: 15%;
+  height: 45px;
+  background-color: gold;
+  font-family: 'bree serif', sans-serif;
+  font-size: 26px;
+  color: darkred;
+}
+.btn3:hover{
+  background-color: gray;
+  color: black;
+}
+.amountsec{
+   margin-left: 5%;
+   width: 90%;
+   height: 40%;
+}
+/*  end*/
+.end{
+  margin-top: 12%;
+}
+
+
+.help::before{
+  content: "";
+  background: url('../imgs/help-now-monthly-17.jpg') no-repeat center center/cover;
+  position: absolute;
+  height: 400px;
+  width: 100%;
+  z-index: -1;
+}
+.help h1 {
+  width: 40%;
+  left: 50%;
+  justify-content: left;
+  text-shadow: 2px 3px 7px yellow;
+  font-family: 'Alfa Slab One', cursive;
+  text-transform: uppercase;
+  color: darkred;
+  text-align: center;
+  font-size: 2.8rem;
+  padding: 50px;
+}
+.help p{
+  width: 50%;
+  left: 47%;
+  justify-content: left;
+  text-align: left;
+  font-family: 'Bree Serif', serif;
+  color: black;
+  padding: 10px;
+  font-size: 1.8rem;
+}
+/* participate*/
+.main {
+  font-family: 'Alfa Slab One', cursive;
+  text-transform: uppercase;
+  color: darkred;
+  text-align: center;
+  font-size: 2.8rem;
+  padding: 50px;
+}
+ .para{
+  color: black;
+  font-family: 'Bree Serif', serif;
+    text-align: center;
+    font-size: 28px;
+    padding: 8px;
+ 
+}
+#detail {
+  
+  display: flex;
+}
+ .box {
+   padding: 34px;
+   margin: 3px 4px;
+   background-color: rgb(233, 233, 160);
+
+}
+.midd .box img{
+   height: 260px;
+   display: block;
+   margin: auto;
+   background-color: thistle;
+}
+.midd .h-primarymid{
+  text-shadow: 2px 3px 7px yellow;
+  font-family: 'Alfa Slab One', cursive;
+  text-transform: uppercase;
+  color: darkred;
+  text-align: center;
+  font-size: 2.1rem;
+  padding: 30px;
+
+}
+.midd p{
+  font-family: 'Bree Serif', serif;
+  text-align: center;
+  font-size: 28px;
+  padding: 4px;
+  left: 50%;
+
+}
