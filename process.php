@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
     <title>Process</title>
 </head>
 <style>
@@ -17,9 +18,28 @@
     background-repeat: no-repeat;
     background-size: 100% 250%;
 }
+
+#sub {
+  height:50px;
+    width:100px;
+    background-color :pink;
+    color: black;
+}
    
 </style>
 <body>
+    <div><h1>Join Our Hands</h1></div>
+    <div>
+    <nav class="navbar1">
+  <ul class="nav-list">
+      <div class="logo"><img src="imgs/logo1.png" alt="logo"></div>
+    <li class="current"><a href="index.html">Home</a></li>
+    <li ><a href="work.html">Our Work</a></li>
+    <li><a href="participate.html">Participate</a></li>
+   
+  </ul>
+</nav>
+    </div>
     
 <form class="row g-3">
   <div class="col-md-4">
@@ -81,9 +101,8 @@
       </div>
     </div>
   </div>
-  <div class="col-12">
-    <button class="btn btn-primary" type="submit">Submit form</button>
-  </div>
+  
+  <input type="submit" value="Submit" id="sub">
 </form>
 </body>
 </html>
