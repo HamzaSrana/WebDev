@@ -126,8 +126,6 @@ body{
 
 
 
-
-
 /* carousel*/
 * { box-sizing: border-box; }
 
@@ -491,7 +489,3 @@ footer{
 
 }
 
-#sub {
-  height:200px;
-  width:200px;
-}
