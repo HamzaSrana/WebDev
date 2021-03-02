@@ -52,7 +52,7 @@
         
         </aside>
     <h1>Join our hands ¤We are grateful to Have you¤</h1>
- <form action="form.php">
+ <form name="form" method="POST" action="form.php">
 First Name: <input type="text" name="firstname" value="<?php echo $firstname;?>">
 
 Last Name: <input type="text" name="lastname" value="<?php echo $lastname;?>">

@@ -66,7 +66,7 @@
 <!-- 1st charity container -->
 <div class="charity">
 <a href=""><img src="imgs/housing.png"></a>
-<form action="process.php" method="POST">
+<form name="index" action="index.php" method="POST">
 <input type="hidden" name="id" value="<?php echo base64_encode(1); ?>">
 <input type="submit" value="Donate $25" name="submit">
 </form>
