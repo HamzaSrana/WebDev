@@ -63,33 +63,33 @@ height: 120px;
 <h2>Save the Children Needs Your Support To Bring Back Smiles</h2>
 <hr/>
 <!-- Place somewhere in the <body> of your page -->
-<div class="img-fluid">
+<div class="flexslider">
 <!-- image slider start here -->
-<ul class="img-fluid">
+<ul class="slides">
 <li>
-<div class="img-fluid">
+<div class="rounded float-start">
 <img src="imgs/5.png"/>
 </div>
 </li>
 <li>
-<div class="img-fluid">
+<div class="rounded float-start">
 <img src="imgs/6.jpg"/>
 </div>
 </li>
 <li>
-<div class="img-fluid">
+<div class="rounded float-start">
 <img src="imgs/gandibachi.jpg"/>
 <img src="imgs/angels-of-hope.jpg" alt="">
 <img src="imgs/dogi.jpg" alt="">
 </div>
 </li>
 <li>
-<div class="img-fluid">
+<div class="rounded float-start">
 <img src="imgs/pray.jpg" />
 </div>
 </li>
 <li>
-<div class="img-fluid">
+<div class="rounded float-start">
 <img src="imgs/kali bachi.jpg" />
 </div>
 </li>

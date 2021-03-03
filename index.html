@@ -11,7 +11,72 @@
   <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <link rel="stylesheet" href="css/style.css">
-    
+  <style>
+  body {
+    font-family: "Lato", sans-serif;
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(245, 221, 7);
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  </style>
+  </head>
+  <body>
+  
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="work.html">Our work</a>
+    <a href="participate.html">Participate</a>
+    <a href="">About us</a>
+    <a href="#">Contact</a>
+  </div>
+  <span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776; Menu</span>
+  
+  <script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+  </script>
+      
 </head>
 <body>
 
@@ -29,6 +94,7 @@
 
   </div>
 </nav>
+
   
 <!--main-->
 <section id="home">
@@ -83,7 +149,7 @@
 
 <!--footer-->
 <footer>
-  <div class="amountsec">
+  div class="amountsec">
     <h5 class="h-secondaryamount">Choose your gift amount</h5>
    <button class="btn2"><a href="success.php">$200</a></button>
    <button class="btn2"><a href="success.php">$100</a></button>
@@ -107,28 +173,6 @@
   </div>
 </footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-       
-  
-  
- 
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
