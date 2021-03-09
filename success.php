@@ -50,7 +50,7 @@ echo "<div class='back_btn'><a href='index.php' id= 'btn'><< Back</a></div>";
 echo "<h3 id='fail'>Thanks for Donation</h3>";
 echo "<P>Transaction Status - Completed</P>";
 echo "<P>Transaction Id - " . $product_transaction . "</P>";
-echo "<div class='back_btn'><a href='index.php' id= 'btn'><< Back</a></div>";
+echo "<div class='back_btn'><a href='donate.php' id= 'btn'><< Back</a></div>";
 }
 ?>
 </div>
