@@ -1,8 +1,8 @@
 <?php
-$servername="127.0.0.1:8081";
-$username="team17";
-$password="ypV5aQXJ";
-$dbname ="default_team17";
+$servername="localhost";
+$username="root";
+$password="";
+$dbname ="webdev";
 // creating connection 
 $conn = new mysqli($servername, $username, $password, $dbname);
 

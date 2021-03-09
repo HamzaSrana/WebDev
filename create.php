@@ -1,9 +1,8 @@
 <?php include 'db.php' ;
 $fname= $_POST['fname'];
 $lname= $_POST['lname'];
-$city= $_POST['email'];
-$groupid= $_POST['groupid'];
-$sql="insert into table11 (fname, lname, email)
+$email= $_POST['email'];
+$sql="insert into table1 (fname, lname, email)
 values('$fname', '$lname', '$email')";
 
 if($conn->query($sql) === TRUE) {

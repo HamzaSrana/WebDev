@@ -54,6 +54,7 @@
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
+  
   </style>
   </head>
   <body>
@@ -76,13 +77,20 @@
     document.getElementById("mySidenav").style.width = "0";
   }
   </script>
-      
+  <style>
+    @media screen and (max-width : 520px){
+      .navmob{
+        display:block;
+          font-size: 14px;
+      }
+    }
+    </style>      
 </head>
 <body>
 
  <!---Navbar-->
  <nav class="navbar">
-  <ul class="nav-list">
+  <ul class="nav-list navmob">
       <div class="logo"><img src="imgs/logo.png" alt="logo"></div>
     <li class="current"><a href="index.html">Home</a></li>
     <li ><a href="work.html">Our Work</a></li>
@@ -141,24 +149,48 @@
   <p  class="h-secondaryp">We do not yet have a cure or vaccine for the coronavirus,
     but we do have a remedy for anxiety and fear…
     PRAYER!</p>
-     <button class="btn4"><i class="fas fa-envelope"></i> Send your prayer</button>
-     <button class="btn4"><i class="fas fa-mobile-alt"></i> Verse of the day</button>
-     <button class="btn4"><i class="fas fa-praying-hands"></i> Prayer walls</button>
+    <div style="width:100%;float:left">
+     <div style="width:32%;float:left;padding:1px;">
+      <button class="btn4"><i class="fas fa-envelope"></i> Send your prayer</button>
+    </div>
+    <div style="width:32%;float:left;padding:1px;">
+      <button class="btn4"><i class="fas fa-mobile-alt"></i> Verse of the day</button>
+      </div>
+      <div style="width:32%;float:left;padding:1px;">
+      <button class="btn4"><i class="fas fa-praying-hands"></i> Prayer walls</button>
+      </div>
+</div>
 </div>
 </section>
 
 
 <!--footer-->
 <footer>
-  div class="amountsec">
-    <h5 class="h-secondaryamount">Choose your gift amount</h5>
-   <button class="btn2"><a href="success.php">$200</a></button>
+  <div style="width:100%;float:left;">
+    <div style="text-align:center;">
+      <h5 class="h-secondaryamount">Choose your gift amount</h5>
+  </div>
+  <div style="width:15%;float:left;">
+      <button class="btn2"><a href="success.php">$200</a></button>
+  </div>
+  <div style="width:15%;float:left;">
    <button class="btn2"><a href="success.php">$100</a></button>
+  </div>
+  <div style="width:15%;float:left;">
    <button class="btn2"><a href="success.php">$125</a></button>
+</div>
+<div style="width:15%;float:left;">
    <button class="btn2"><a href="success.php">$150</a></button>
+</div>
+<div style="width:15%;float:left;">
    <button class="btn2"><a href="success.php">$250</a></button>
+</div>
+<div style="width:25%;float:left;">
    <input class="amount" type="text" placeholder="Enter your Amount">
-   <button class="btn3"><a href="index.php">Donate Now</a></button>
+</div>
+<div style="width:100%;float:left;">
+   <button class="donate"><a href="donate.php">Donate Now</a></button>
+  </div>
   </div>
 
   <div class="end">
